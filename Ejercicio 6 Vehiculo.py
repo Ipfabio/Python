@@ -1,11 +1,13 @@
-class Vehiculo:
-    color = "Azul"
-    ruedas = 4
-    puertas = 2
+class Alumno:
+    def __init__(self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
 
-class Coche(Vehiculo):
-    velocidad = 150
-    cilindrada = 12
+    def apruebaONo(nota):
+        if(nota > 6):
+            print("Ha aprobado con {}",nota)
+        else:
+            print("Su nota es {}, no ha aprobado",nota)
 
-c = Coche()
-print("El coche es",c)
+alumn = Alumno("Marcos", 7)
+print(alumn.apruebaONo)
