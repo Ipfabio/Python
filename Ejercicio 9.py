@@ -1,0 +1,2 @@
+from goHome import *
+goHome()
